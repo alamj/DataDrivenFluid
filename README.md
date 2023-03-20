@@ -1,7 +1,7 @@
 # DataDrivenFluid
 Illustration of Proper Orthogonal Decomposition (POD) and (DMD)
 
-Example 1: 
+Example 1 (xburgers_pod.py): 
          Solve 1D viscous Burgers equation using using spectral method.
          
          First part of the code uses FFT from numpy to discretize Burgers equation using periodic boundary condition.
