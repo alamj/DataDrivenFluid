@@ -9,6 +9,8 @@ Data    : flow past a cylinder at Reynolds number, Re = 400. There are two data 
           https://www.dropbox.com/s/7r5djn0vykkhgtk/cyldata6h.csv?dl=0
           
           cyldata1k.csv contains 1000 snapshots of the vorticity at a time step of dt = 0.125
+          the second data (~3.6GB) can be downloaed from the following link:
+          https://www.dropbox.com/s/nmb9yqxyoswqgkz/cyldata1k.csv?dl=0
             
           The grid consists of 768 x 192 points in the streamwise and spanwise directions. 
           The field is stored as an 1D vector of size 768*192 = 147456
