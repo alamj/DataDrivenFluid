@@ -2,6 +2,7 @@
 Illustration of Proper Orthogonal Decomposition (POD) and (DMD)
 
 Data    : flow past a cylinder at Reynolds number, Re = 400. There are two data files.
+          The data can be downloaded from the given link.
 
           cyldata6h.csv contains  600 snapshots of the vorticity at a time step of dt = 0.125
           the first data (~2.2GB) can be downloaded from this link:
