@@ -15,7 +15,7 @@ Data    : flow past a cylinder at Reynolds number, Re = 200. There are two data 
           The grid consists of 768 x 192 points in the streamwise and spanwise directions. 
           The field is stored as an 1D vector of size 768*192 = 147456
           
-          A smaller data, cyl_data_clean.csv, contains the vorticity at a time step of dt = ??
+          A smaller data (~121MB), cyl_data_clean.csv, contains the vorticity at a time step of dt = ??
           https://www.dropbox.com/s/gjyimyf2eo1aajd/cyl_data_clean.csv?dl=0
           This field is stored as 151 of 1D vectors of size 199*499.
           See the notebook to read this data. 
