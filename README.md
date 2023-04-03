@@ -15,6 +15,8 @@ Data    : flow past a cylinder at Reynolds number, Re = 400. There are two data 
           The grid consists of 768 x 192 points in the streamwise and spanwise directions. 
           The field is stored as an 1D vector of size 768*192 = 147456
           
+          There are two example codes (python script and nobebook) showing how to read and visualize the data. 
+          
 Example : (xburgers_pod.py): 
          Solve 1D viscous Burgers equation using using spectral method.
          
