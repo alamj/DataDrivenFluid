@@ -34,3 +34,16 @@ Example : (xburgers_pod.py):
          Second part of the code uses SVD from mumpy.linalg to compute POD modes. 
          It illustrates low-dimensional approximation of the solution.
          Then, it shows first 4 POD modes.
+
+         (pod_dmd_lab1.ipynb)
+         This notebook shows how to compute POD modes using SVD
+
+         (pod_admm_lab2.ipynb)
+         This notebook provides an implementation of ADMM. It provides a soft-threshold scheme and shows code to add salt and paper noise.
+
+         To use this notebook, download one of the cylinder flow data posted in dropbox link, and 
+         replace "code/spiral_flow_clean128.csv" according to the downloaded data file name, and
+         replace values of nx and ny according to the downloaded data. 
+
+         (pod_dmd_lab3.ipynb)
+         ....comming soon....
