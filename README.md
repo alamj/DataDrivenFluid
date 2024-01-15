@@ -46,4 +46,4 @@ Example : (xburgers_pod.py):
          replace values of nx and ny according to the downloaded data. 
 
          (pod_dmd_lab3.ipynb)
-         ....comming soon....
+         This notebook provides an implementation of DMD method. 
