@@ -44,6 +44,13 @@ Example : (xburgers_pod.py):
          To use this notebook, download one of the cylinder flow data posted in dropbox link, and 
          replace "code/spiral_flow_clean128.csv" according to the downloaded data file name, and
          replace values of nx and ny according to the downloaded data. 
+         Download spiral_flow_noisy128.csv (128 x 128) grid
+         
+         https://www.dropbox.com/scl/fi/gshz0m45pbhlocv64b3w5/spiral_flow_noisy128.csv?rlkey=7ir5qtaj75hav4xjrfjjkqt4x&dl=0
+
+         Download spiral_flow_clean128.csv (128 x 128) grid
+         https://www.dropbox.com/scl/fi/fs0wqq98vp45g5zew93h0/spiral_flow_clean128.csv?rlkey=274j1jfgr5oue1m0wnevb3eqs&dl=0
+         
 
          (pod_dmd_lab3.ipynb)
          This notebook provides an implementation of DMD method. 
