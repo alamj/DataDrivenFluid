@@ -1,6 +1,9 @@
 # DataDrivenFluid
 Illustration of Proper Orthogonal Decomposition (POD) and (DMD)
 
+This repository shares some sample python code, which can be explored to develop ideas of
+how POD and DMD methods are developed. Sample data can be downloaded from the dropbox link.
+
 Data    : flow past a cylinder at Reynolds number, Re = 200. There are two data files.
           The data can be downloaded from the given link.
 
