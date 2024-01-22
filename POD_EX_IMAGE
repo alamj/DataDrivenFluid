@@ -1,0 +1,11 @@
+
+This notebook ( pod_ex_image.ipynb ) shows the following:
+
+1) Download a set of images from sklearn database and display the images using matplotlib
+
+2) Treat the images as snapshot of a fluid flow (just for demonstration purpose). Calculate the POD modes of the mean subtracted images, U-Ubar. 
+   Reconstruct the images using a low rank projection.
+
+3) Add salt and paper noise to images using numpy.random
+
+4) Apply ADMM algorithm to decompose the noisy images into coherent (low rank) and incoherent (residual) modes. 
