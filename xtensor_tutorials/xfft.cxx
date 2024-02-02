@@ -85,6 +85,44 @@ int main()
   //libawcm::xplt::plot(k.begin(),k.end(), xt::abs(psd).begin());
   //libawcm::xplt::draw();
 
+  /*
+    Repeat the above with a synthetic turbulence signal
+    Read the synthetic wind field
+    row 0: time
+    row 1: wind, and it follows Kolmogorov energy spectrum
+  */
+  std::ifstream fin;
+  fin.open("synthetic_wind.csv");
+  
+  u = xt::load_csv<double>(fin);
+  //xt::xarray<double> t = xt::row(u,0);
+  u = xt::row(u,1);
+
+  /*
+    Consider the conjugate symmetry
+    while taking FFT (see FFTW document)
+  */
+  uHat = xt::fftw::rfft(u);
+  psd = xt::real(uHat*xt::conj(uHat));
+
+  k = xt::arange<double>(0,psd.shape()[0],1);
+  n = u.shape()[0];
+
+  //libawcm::xplt::loglog(k.begin(),k.end(), xt::abs(psd).begin());
+  //libawcm::xplt::draw();
+
+  /*
+    Verify how accurately the energy is prserved
+    Calculate E for the synthetic data
+    and also compare with energy
+  */
+  odd = xt::view(psd,xt::range(0,1));
+  rst = xt::view(psd,xt::range(1,_));
+
+  auto E = (xt::sum(xt::abs(odd)) + 2*xt::sum(xt::abs(rst)))/n;
+  std::cout << "Energy of Fourier modes: " << energy << ", " << E << ", Actual energy: " << xt::sum(xt::pow(u,2)) << std::endl;
+
+  std::cout << "Wavenumbers of the synthetic data: " << k << std::endl;
   return 0;
 }
 
