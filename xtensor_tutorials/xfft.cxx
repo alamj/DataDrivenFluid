@@ -1,3 +1,8 @@
+/*
+  Author: Dr. Jahrul Alam (alamj@mun.ca)
+  This code is a part of AWCM++ (Advanced Weighted Residual Collocation Methodology in C++)
+*/
+
 #include <iostream>
 #include <fstream>
 #include <bit>
