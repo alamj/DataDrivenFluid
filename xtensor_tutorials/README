@@ -1,4 +1,4 @@
 xfft.cxx
 --------
 
-Take f(x) at two wavenumbers; detect the energy and the wavenumbers through FFT
+Take f(x) at two wavenumbers; detect the energy and the wavenumbers through FFT. Running this code will require installation of xtensor package. 
