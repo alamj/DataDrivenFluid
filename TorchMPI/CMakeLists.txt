@@ -6,7 +6,7 @@ find_package(MPI REQUIRED)
 
 include_directories(SYSTEM ${MPI_C_INCLUDE_PATH} ${MPI_CXX_INCLUDE_PATH})
 
-add_executable(awcm xtest.cxx)
+add_executable(awcm torchMPI.cxx)
 target_link_libraries(awcm "${TORCH_LIBRARIES}")
 target_link_libraries(awcm ${MPI_LIBRARIES})
 #target_link_libraries(awcm ${CMAKE_PREFIX_PATH}/torch/lib/libc10.so)
