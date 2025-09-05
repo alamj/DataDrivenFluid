@@ -1,2 +1,49 @@
 
 Gra-vdi in alliancecan.ca
+
+First, login to gra-vdi through tigervnc, open a terminal and load the following modules.
+
+module load CcEnv StdEnv/2023
+
+At this stage, you can run a c++ code dedicated for visulalization and post processing the simulation results. 
+
+To use python, follow the steps below.
+
+module load python/3.10
+
+virtualenv --no-download ~/ENV
+source ~ENV/bin/activate
+
+At this stage, you can run a python code as:
+
+python my_sample_code.py
+
+For the first time you got virtual environment by using above command, it is recommended to run:
+
+pip install --no-index --upgrade pip
+
+Alliance Canada provide a python stack, which can be loaded as:
+
+module load scipy-stack
+
+This stack includes mapplotlib and numpy including a few other packages. New packages can be installed using pip command as needed. 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Example:
+
+/project/def-alamj/shared/bin/v2306/awcmviewer -INP post_process.inp -analysis probe -time 0 -fields 'U'  -out fowf15mwR0.h5  -pwd
+
+this command reads /path/to/case/postProcessing/probes/0/U and creates /path/to/case/statistics/xdmf/fow15mwR0.h5
+
+This .h5 contains "data" matrix, where the first row is time.
+
+
+
+
+
+
+
+
+
+
+
